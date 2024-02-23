@@ -37,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9EA00002B895CF70093EB77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9EAFFF12B8824E20093EB77 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A9EAFFDC2B8824DF0093EB77 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +64,47 @@
 		A9EAFFE72B8824DF0093EB77 /* Cartera */ = {
 			isa = PBXGroup;
 			children = (
-				A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */,
-				A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */,
-				A9EAFFEC2B8824DF0093EB77 /* ViewController.swift */,
-				A9EAFFEE2B8824DF0093EB77 /* Main.storyboard */,
-				A9EAFFF12B8824E20093EB77 /* Assets.xcassets */,
-				A9EAFFF32B8824E20093EB77 /* LaunchScreen.storyboard */,
-				A9EAFFF62B8824E20093EB77 /* Info.plist */,
+				A9EA00002B895CF70093EB77 /* Resources */,
+				A9EAFFFE2B895CA30093EB77 /* Business */,
+				A9EAFFFD2B895C9C0093EB77 /* Presentation */,
+				A9EAFFFC2B895C790093EB77 /* App */,
 			);
 			path = Cartera;
+			sourceTree = "<group>";
+		};
+		A9EAFFFC2B895C790093EB77 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A9EAFFF62B8824E20093EB77 /* Info.plist */,
+				A9EAFFF32B8824E20093EB77 /* LaunchScreen.storyboard */,
+				A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */,
+				A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A9EAFFFD2B895C9C0093EB77 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A9EAFFFF2B895CAB0093EB77 /* MainView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A9EAFFFE2B895CA30093EB77 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		A9EAFFFF2B895CAB0093EB77 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				A9EAFFEE2B8824DF0093EB77 /* Main.storyboard */,
+				A9EAFFEC2B8824DF0093EB77 /* ViewController.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +334,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FJAA2F3LCL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Cartera/Info.plist;
+				INFOPLIST_FILE = Cartera/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -325,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FJAA2F3LCL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Cartera/Info.plist;
+				INFOPLIST_FILE = Cartera/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
