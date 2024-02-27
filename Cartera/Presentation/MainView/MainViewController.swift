@@ -13,9 +13,7 @@ class MainViewController: UITabBarController {
         static let separatorHeight: CGFloat = 1
     }
     
-    private var profileNavigationController: UINavigationController!
-    private var educationNavigationController: UINavigationController!
-    private var workNavigationController: UINavigationController!
+    private var navigationControllers: [UINavigationController]!
     
     private var separatorView: UIView!
     
@@ -30,20 +28,20 @@ class MainViewController: UITabBarController {
     }
     
     private func setupContent() {
-        let profileVC = ProfileViewController.instantiateFrom(storyboardName: "ProfileViewController")
-        let educationVC = EducationViewController.instantiateFrom(storyboardName: "EducationViewController")
-        let workVC = WorkViewController.instantiateFrom(storyboardName: "WorkViewController")
+        let viewControllers = AppTab.allCases.compactMap { appTab in
+            let viewController = UIViewController.instantiateFrom(storyboardName: appTab.viewControllerName)
+            viewController?.tabBarItem = TabBarItem(title: appTab.tabBarTitle, image: UIImage(systemName: appTab.tabBarImageName), tag: appTab.tabBarID)
+            return viewController
+        }
         
-        profileNavigationController = UINavigationController(rootViewController: profileVC!)
-        educationNavigationController = UINavigationController(rootViewController: educationVC!)
-        workNavigationController = UINavigationController(rootViewController: workVC!)
+        self.navigationControllers = viewControllers.map { viewController in
+            let navigationController = UINavigationController(rootViewController: viewController)
+            navigationController.tabBarItem = viewController.tabBarItem
+            return navigationController
+        }
         
         // Configure tab bar
-        self.viewControllers = [profileNavigationController, educationNavigationController, workNavigationController]
-        
-        profileNavigationController.tabBarItem = TabBarItem(title: "Profile", image: UIImage(systemName: "person.crop.circle"), tag: 0)
-        educationNavigationController.tabBarItem = TabBarItem(title: "Education", image: UIImage(systemName: "graduationcap"), tag: 1)
-        workNavigationController.tabBarItem = TabBarItem(title: "Jobs", image: UIImage(systemName: "suitcase"), tag: 2)
+        self.viewControllers = self.navigationControllers
     }
     
     private func addSeparatorLine() {

@@ -24,6 +24,7 @@
 		A9FC06112B8DC67B002D6565 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC06102B8DC67B002D6565 /* TabBarItem.swift */; };
 		A9FC06132B8DC6B5002D6565 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC06122B8DC6B5002D6565 /* WorkViewController.swift */; };
 		A9FC06152B8DC6BF002D6565 /* WorkViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FC06142B8DC6BF002D6565 /* WorkViewController.storyboard */; };
+		A9FC06172B8DC860002D6565 /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC06162B8DC860002D6565 /* AppTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		A9FC06102B8DC67B002D6565 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		A9FC06122B8DC6B5002D6565 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
 		A9FC06142B8DC6BF002D6565 /* WorkViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorkViewController.storyboard; sourceTree = "<group>"; };
+		A9FC06162B8DC860002D6565 /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				A9EAFFEE2B8824DF0093EB77 /* Main.storyboard */,
 				A9EAFFEC2B8824DF0093EB77 /* MainViewController.swift */,
+				A9FC06162B8DC860002D6565 /* AppTab.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9EAFFED2B8824DF0093EB77 /* MainViewController.swift in Sources */,
+				A9FC06172B8DC860002D6565 /* AppTab.swift in Sources */,
 				A9FC06082B8D5820002D6565 /* EducationViewController.swift in Sources */,
 				A9FC06112B8DC67B002D6565 /* TabBarItem.swift in Sources */,
 				A9EAFFE92B8824DF0093EB77 /* AppDelegate.swift in Sources */,
