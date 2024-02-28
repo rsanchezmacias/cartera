@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90143AA2B8E94A000309992 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143A92B8E94A000309992 /* ProfileManager.swift */; };
+		A90143AC2B8E952C00309992 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143AB2B8E952B00309992 /* Container.swift */; };
+		A90143AF2B8E96BB00309992 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143AE2B8E96BB00309992 /* UserInfo.swift */; };
+		A90143B12B8E994A00309992 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143B02B8E994A00309992 /* ProfileViewModel.swift */; };
 		A9EAFFE92B8824DF0093EB77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */; };
 		A9EAFFEB2B8824DF0093EB77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */; };
 		A9EAFFED2B8824DF0093EB77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFEC2B8824DF0093EB77 /* MainViewController.swift */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A90143A92B8E94A000309992 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		A90143AB2B8E952B00309992 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		A90143AE2B8E96BB00309992 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		A90143B02B8E994A00309992 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		A9EAFFE52B8824DF0093EB77 /* Cartera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A90143AD2B8E96AF00309992 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A90143AE2B8E96BB00309992 /* UserInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A9EA00002B895CF70093EB77 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +122,7 @@
 				A9EAFFF32B8824E20093EB77 /* LaunchScreen.storyboard */,
 				A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */,
 				A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */,
+				A90143AB2B8E952B00309992 /* Container.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -126,6 +143,7 @@
 		A9EAFFFE2B895CA30093EB77 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				A90143AD2B8E96AF00309992 /* Models */,
 				A9FC05F62B8D507A002D6565 /* Managers */,
 				A9FC05F52B8D5072002D6565 /* Services */,
 			);
@@ -153,6 +171,7 @@
 		A9FC05F62B8D507A002D6565 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				A90143A92B8E94A000309992 /* ProfileManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -170,6 +189,7 @@
 			children = (
 				A9FC06032B8D5771002D6565 /* ProfileViewController.storyboard */,
 				A9FC06052B8D577B002D6565 /* ProfileViewController.swift */,
+				A90143B02B8E994A00309992 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -292,11 +312,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9EAFFED2B8824DF0093EB77 /* MainViewController.swift in Sources */,
+				A90143AC2B8E952C00309992 /* Container.swift in Sources */,
 				A9FC06172B8DC860002D6565 /* AppTab.swift in Sources */,
 				A9FC06082B8D5820002D6565 /* EducationViewController.swift in Sources */,
+				A90143AA2B8E94A000309992 /* ProfileManager.swift in Sources */,
 				A9FC06112B8DC67B002D6565 /* TabBarItem.swift in Sources */,
+				A90143B12B8E994A00309992 /* ProfileViewModel.swift in Sources */,
 				A9EAFFE92B8824DF0093EB77 /* AppDelegate.swift in Sources */,
 				A9FC06062B8D577B002D6565 /* ProfileViewController.swift in Sources */,
+				A90143AF2B8E96BB00309992 /* UserInfo.swift in Sources */,
 				A9FC060E2B8DBD29002D6565 /* UIViewController+Extension.swift in Sources */,
 				A9FC06132B8DC6B5002D6565 /* WorkViewController.swift in Sources */,
 				A9FC05FD2B8D50D4002D6565 /* JSONParser.swift in Sources */,
