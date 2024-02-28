@@ -26,7 +26,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="182"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="nyF-Pq-81O" userLabel="Top Content Stack View">
-                                                        <rect key="frame" x="24" y="32" width="345" height="118"/>
+                                                        <rect key="frame" x="32" y="32" width="329" height="118"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bAY-XJ-Vw7">
                                                                 <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
@@ -34,25 +34,50 @@
                                                                     <constraint firstAttribute="width" secondItem="bAY-XJ-Vw7" secondAttribute="height" multiplier="1:1" id="JaF-C0-3cG"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="psU-df-qc8" userLabel="User Info Stack View">
-                                                                <rect key="frame" x="142" y="0.0" width="203" height="118"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i47-17-1Qb" userLabel="Labels Container">
+                                                                <rect key="frame" x="142" y="0.0" width="187" height="118"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lky-pm-KlA" userLabel="Full Name Label">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="203" height="118"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="psU-df-qc8" userLabel="User Info Stack View">
+                                                                        <rect key="frame" x="0.0" y="12.333333333333329" width="187" height="93"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lky-pm-KlA" userLabel="Full Name Label">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="75.666666666666671" height="20.333333333333332"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Engineer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNx-Jc-GeX" userLabel="Occupation Label">
+                                                                                <rect key="frame" x="0.0" y="36.333333333333329" width="67" height="20.333333333333329"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chico, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIk-kt-6UI" userLabel="Location Label">
+                                                                                <rect key="frame" x="0.0" y="72.666666666666671" width="75" height="20.333333333333329"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
                                                                 </subviews>
-                                                            </stackView>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="psU-df-qc8" firstAttribute="leading" secondItem="i47-17-1Qb" secondAttribute="leading" id="1kI-K4-Zd8"/>
+                                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="psU-df-qc8" secondAttribute="bottom" constant="8" id="K2c-vq-kzw"/>
+                                                                    <constraint firstItem="psU-df-qc8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i47-17-1Qb" secondAttribute="top" constant="8" id="Oo2-8b-LKL"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="psU-df-qc8" secondAttribute="trailing" id="Pxc-ot-YRK"/>
+                                                                    <constraint firstItem="psU-df-qc8" firstAttribute="centerY" secondItem="i47-17-1Qb" secondAttribute="centerY" id="tI8-Zd-j9Y"/>
+                                                                </constraints>
+                                                            </view>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="nyF-Pq-81O" secondAttribute="bottom" constant="32" id="Q2b-VO-u6m"/>
-                                                    <constraint firstAttribute="trailing" secondItem="nyF-Pq-81O" secondAttribute="trailing" constant="24" id="dBZ-zg-tys"/>
-                                                    <constraint firstItem="nyF-Pq-81O" firstAttribute="leading" secondItem="PB8-eh-akj" secondAttribute="leading" constant="24" id="gBz-yC-QgA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nyF-Pq-81O" secondAttribute="trailing" constant="32" id="dBZ-zg-tys"/>
+                                                    <constraint firstItem="nyF-Pq-81O" firstAttribute="leading" secondItem="PB8-eh-akj" secondAttribute="leading" constant="32" id="gBz-yC-QgA"/>
                                                     <constraint firstItem="nyF-Pq-81O" firstAttribute="top" secondItem="PB8-eh-akj" secondAttribute="top" constant="32" id="gFA-gS-78f"/>
                                                 </constraints>
                                             </view>
@@ -84,6 +109,8 @@
                     </view>
                     <connections>
                         <outlet property="fullNameLabel" destination="Lky-pm-KlA" id="ddy-j3-TfA"/>
+                        <outlet property="locationLabel" destination="aIk-kt-6UI" id="r8i-BR-sXt"/>
+                        <outlet property="occupationLabel" destination="iNx-Jc-GeX" id="RR4-EJ-iBK"/>
                         <outlet property="profileImageView" destination="bAY-XJ-Vw7" id="GsF-t8-map"/>
                     </connections>
                 </viewController>

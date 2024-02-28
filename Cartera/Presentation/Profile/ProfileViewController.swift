@@ -12,14 +12,23 @@ class ProfileViewController: UIViewController {
     
     struct Constants {
         static let title: String = "Profile"
+        static let nameFontSize: CGFloat = 24.0
+        static let bodyFontSize: CGFloat = 14.0
     }
     
     @IBOutlet weak var fullNameLabel: UILabel! {
         didSet {
-            fullNameLabel.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+            fullNameLabel.font = UIFont.systemFont(ofSize: Self.Constants.nameFontSize, weight: .semibold)
         }
     }
     
+    @IBOutlet weak var occupationLabel: UILabel! {
+        didSet {
+            occupationLabel.font = UIFont.systemFont(ofSize: Self.Constants.bodyFontSize, weight: .regular)
+        }
+    }
+    
+    @IBOutlet weak var locationLabel: UILabel!
     
     @IBOutlet weak var profileImageView: UIImageView! {
         didSet {
@@ -47,6 +56,37 @@ class ProfileViewController: UIViewController {
         viewModel.$userName.sink { [weak self] name in
             self?.fullNameLabel.text = name
         }.store(in: &subscriptions)
+        
+        viewModel.$userPosition.sink { [weak self] position in
+            self?.occupationLabel.text = position
+        }.store(in: &subscriptions)
+        
+        viewModel.$userLocation.sink { [weak self] location in
+            self?.configureLocationLabel(location: location)
+        }.store(in: &subscriptions)
+    }
+    
+    private func configureLocationLabel(location: String?) {
+        if let image = UIImage(systemName: "mappin.circle") {
+            let attachment = NSTextAttachment(image: image)
+            let attachmentString = NSAttributedString(attachment: attachment)
+            
+            let labelText = NSAttributedString(string: " \( location ?? "")")
+            let mutableStringWithAttachment = NSMutableAttributedString(attributedString: attachmentString)
+            mutableStringWithAttachment.append(labelText)
+            
+            let attributes: [NSAttributedString.Key: Any] = [
+                .foregroundColor: UIColor.lightGray,
+                .font: UIFont.systemFont(ofSize: Self.Constants.bodyFontSize, weight: .semibold)
+            ]
+            
+            mutableStringWithAttachment.addAttributes(attributes, range: NSRange(location: 0, length: mutableStringWithAttachment.length))
+            locationLabel.attributedText = mutableStringWithAttachment
+        } else {
+            locationLabel.text = viewModel.userLocation
+            locationLabel.font = UIFont.systemFont(ofSize: Self.Constants.bodyFontSize, weight: .regular)
+            locationLabel.tintColor = .lightGray
+        }
     }
     
 }
