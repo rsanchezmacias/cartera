@@ -19,6 +19,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var fullNameLabel: UILabel! {
         didSet {
             fullNameLabel.font = UIFont.systemFont(ofSize: Self.Constants.nameFontSize, weight: .semibold)
+            fullNameLabel.adjustsFontSizeToFitWidth = true
         }
     }
     
@@ -33,6 +34,12 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var profileImageView: UIImageView! {
         didSet {
             profileImageView.layer.cornerRadius = 16.0
+        }
+    }
+    
+    @IBOutlet weak var profileDescriptionLabel: UILabel! {
+        didSet {
+            profileDescriptionLabel.font = UIFont.systemFont(ofSize: Self.Constants.bodyFontSize, weight: .regular)
         }
     }
     
@@ -59,6 +66,10 @@ class ProfileViewController: UIViewController {
         
         viewModel.$userPosition.sink { [weak self] position in
             self?.occupationLabel.text = position
+        }.store(in: &subscriptions)
+        
+        viewModel.$userDescription.sink { [weak self] description in
+            self?.profileDescriptionLabel.text = description
         }.store(in: &subscriptions)
         
         viewModel.$userLocation.sink { [weak self] location in

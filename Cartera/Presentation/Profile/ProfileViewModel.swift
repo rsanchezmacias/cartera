@@ -15,6 +15,7 @@ class ProfileViewModel: ObservableObject {
     @Published var userName: String?
     @Published var userPosition: String?
     @Published var userLocation: String?
+    @Published var userDescription: String?
     @Published var userImage: UIImage?
     
     private var subscriptions: [AnyCancellable] = []
@@ -34,6 +35,7 @@ class ProfileViewModel: ObservableObject {
                 self?.userName = userInfo.fullName
                 self?.userPosition = userInfo.position
                 self?.userLocation = userInfo.location
+                self?.userDescription = userInfo.description
             }
             .store(in: &subscriptions)
         
