@@ -19,6 +19,12 @@
 		A90143C02B90584600309992 /* JobSnapshotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90143BF2B90584600309992 /* JobSnapshotView.xib */; };
 		A90143C32B905C7600309992 /* WorkSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143C22B905C7600309992 /* WorkSummaryViewModel.swift */; };
 		A90143C52B906CEC00309992 /* Date+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143C42B906CEC00309992 /* Date+Util.swift */; };
+		A90143C72B912DCE00309992 /* skills.json in Resources */ = {isa = PBXBuildFile; fileRef = A90143C62B912DCE00309992 /* skills.json */; };
+		A90143C92B912F0600309992 /* SkillsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143C82B912F0600309992 /* SkillsManager.swift */; };
+		A90143CB2B912FE300309992 /* SkillsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143CA2B912FE300309992 /* SkillsInfo.swift */; };
+		A90143CF2B9130FE00309992 /* PillsHorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143CE2B9130FE00309992 /* PillsHorizontalViewController.swift */; };
+		A90143D12B9136F400309992 /* PillLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143D02B9136F400309992 /* PillLabelCollectionViewCell.swift */; };
+		A91796482B914DD600E892AF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91796472B914DD600E892AF /* String+Extension.swift */; };
 		A9EAFFE92B8824DF0093EB77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */; };
 		A9EAFFEB2B8824DF0093EB77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */; };
 		A9EAFFED2B8824DF0093EB77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFEC2B8824DF0093EB77 /* MainViewController.swift */; };
@@ -52,6 +58,12 @@
 		A90143BF2B90584600309992 /* JobSnapshotView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobSnapshotView.xib; sourceTree = "<group>"; };
 		A90143C22B905C7600309992 /* WorkSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSummaryViewModel.swift; sourceTree = "<group>"; };
 		A90143C42B906CEC00309992 /* Date+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Util.swift"; sourceTree = "<group>"; };
+		A90143C62B912DCE00309992 /* skills.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = skills.json; sourceTree = "<group>"; };
+		A90143C82B912F0600309992 /* SkillsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsManager.swift; sourceTree = "<group>"; };
+		A90143CA2B912FE300309992 /* SkillsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsInfo.swift; sourceTree = "<group>"; };
+		A90143CE2B9130FE00309992 /* PillsHorizontalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsHorizontalViewController.swift; sourceTree = "<group>"; };
+		A90143D02B9136F400309992 /* PillLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillLabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		A91796472B914DD600E892AF /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		A9EAFFE52B8824DF0093EB77 /* Cartera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +102,7 @@
 			children = (
 				A90143AE2B8E96BB00309992 /* UserInfo.swift */,
 				A90143B82B90523F00309992 /* JobInfo.swift */,
+				A90143CA2B912FE300309992 /* SkillsInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,6 +116,15 @@
 				A90143BF2B90584600309992 /* JobSnapshotView.xib */,
 			);
 			path = WorkSummary;
+			sourceTree = "<group>";
+		};
+		A90143CD2B9130D600309992 /* Pills_Horizontal_View */ = {
+			isa = PBXGroup;
+			children = (
+				A90143CE2B9130FE00309992 /* PillsHorizontalViewController.swift */,
+				A90143D02B9136F400309992 /* PillLabelCollectionViewCell.swift */,
+			);
+			path = Pills_Horizontal_View;
 			sourceTree = "<group>";
 		};
 		A9EA00002B895CF70093EB77 /* Resources */ = {
@@ -201,6 +223,7 @@
 			children = (
 				A90143A92B8E94A000309992 /* ProfileManager.swift */,
 				A90143B62B904C9300309992 /* WorkManager.swift */,
+				A90143C82B912F0600309992 /* SkillsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -210,6 +233,7 @@
 			children = (
 				A9FC060D2B8DBD29002D6565 /* UIViewController+Extension.swift */,
 				A90143C42B906CEC00309992 /* Date+Util.swift */,
+				A91796472B914DD600E892AF /* String+Extension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -255,6 +279,7 @@
 			children = (
 				A9FC06012B8D532A002D6565 /* profile.json */,
 				A90143B42B90486400309992 /* jobs.json */,
+				A90143C62B912DCE00309992 /* skills.json */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -262,6 +287,7 @@
 		A9FC060F2B8DC66F002D6565 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A90143CD2B9130D600309992 /* Pills_Horizontal_View */,
 				A9FC06102B8DC67B002D6565 /* TabBarItem.swift */,
 			);
 			path = Components;
@@ -326,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9FC06022B8D532A002D6565 /* profile.json in Resources */,
+				A90143C72B912DCE00309992 /* skills.json in Resources */,
 				A9FC05FF2B8D52EA002D6565 /* profile_image.jpeg in Resources */,
 				A9FC06042B8D5771002D6565 /* ProfileViewController.storyboard in Resources */,
 				A9FC060A2B8D582A002D6565 /* EducationViewController.storyboard in Resources */,
@@ -346,13 +373,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A90143C32B905C7600309992 /* WorkSummaryViewModel.swift in Sources */,
+				A90143C92B912F0600309992 /* SkillsManager.swift in Sources */,
 				A90143C52B906CEC00309992 /* Date+Util.swift in Sources */,
 				A9EAFFED2B8824DF0093EB77 /* MainViewController.swift in Sources */,
 				A90143AC2B8E952C00309992 /* Container.swift in Sources */,
 				A90143BE2B90583400309992 /* JobSnapshotView.swift in Sources */,
 				A9FC06172B8DC860002D6565 /* AppTab.swift in Sources */,
+				A90143CB2B912FE300309992 /* SkillsInfo.swift in Sources */,
+				A91796482B914DD600E892AF /* String+Extension.swift in Sources */,
 				A9FC06082B8D5820002D6565 /* EducationViewController.swift in Sources */,
 				A90143AA2B8E94A000309992 /* ProfileManager.swift in Sources */,
+				A90143D12B9136F400309992 /* PillLabelCollectionViewCell.swift in Sources */,
 				A90143B72B904C9300309992 /* WorkManager.swift in Sources */,
 				A9FC06112B8DC67B002D6565 /* TabBarItem.swift in Sources */,
 				A90143BC2B9055CF00309992 /* WorkSummaryViewController.swift in Sources */,
@@ -363,6 +394,7 @@
 				A9FC060E2B8DBD29002D6565 /* UIViewController+Extension.swift in Sources */,
 				A9FC06132B8DC6B5002D6565 /* WorkViewController.swift in Sources */,
 				A9FC05FD2B8D50D4002D6565 /* JSONParser.swift in Sources */,
+				A90143CF2B9130FE00309992 /* PillsHorizontalViewController.swift in Sources */,
 				A9EAFFEB2B8824DF0093EB77 /* SceneDelegate.swift in Sources */,
 				A90143B92B90523F00309992 /* JobInfo.swift in Sources */,
 			);

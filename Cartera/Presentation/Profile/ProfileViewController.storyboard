@@ -79,7 +79,7 @@
                                                                 <rect key="frame" x="0.0" y="117.99999999999999" width="329" height="147.66666666666663"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="User profile description. Usually no more than a paragraph's length. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRY-uL-Bda">
-                                                                        <rect key="frame" x="0.0" y="20.000000000000007" width="313.66666666666669" height="111.66666666666669"/>
+                                                                        <rect key="frame" x="0.0" y="20.000000000000007" width="313.66666666666669" height="127.66666666666669"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -89,7 +89,7 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kRY-uL-Bda" secondAttribute="trailing" id="Seu-a5-IN7"/>
                                                                     <constraint firstItem="kRY-uL-Bda" firstAttribute="leading" secondItem="aCA-ty-uUz" secondAttribute="leading" id="XFY-zz-sWC"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="kRY-uL-Bda" secondAttribute="bottom" constant="16" id="wDF-we-BPV"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="kRY-uL-Bda" secondAttribute="bottom" id="wDF-we-BPV"/>
                                                                     <constraint firstItem="kRY-uL-Bda" firstAttribute="top" secondItem="aCA-ty-uUz" secondAttribute="top" constant="20" id="wgi-WP-zCp"/>
                                                                 </constraints>
                                                             </view>

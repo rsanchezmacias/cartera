@@ -11,6 +11,7 @@ import Combine
 class ProfileViewModel: ObservableObject {
     
     @Published private var profileManager: ProfileManagerProtocol!
+    @Published private var skillsManager: SkillsManagerProtocol!
     
     @Published var userName: String?
     @Published var userPosition: String?
@@ -18,10 +19,13 @@ class ProfileViewModel: ObservableObject {
     @Published var userDescription: String?
     @Published var userImage: UIImage?
     
+    @Published var skills: [String] = []
+    
     private var subscriptions: [AnyCancellable] = []
     
     init() {
         profileManager = Container.shared.profileManager
+        skillsManager = Container.shared.skillsManager
         
         subscribe()
     }
@@ -43,6 +47,14 @@ class ProfileViewModel: ObservableObject {
             .receive(on: RunLoop.main)
             .sink { [weak self] image in
                 self?.userImage = image
+            }
+            .store(in: &subscriptions)
+        
+        skillsManager.languages
+            .combineLatest(skillsManager.other)
+            .receive(on: RunLoop.main)
+            .sink { [weak self] languages, other in
+                self?.skills = languages + other
             }
             .store(in: &subscriptions)
     }

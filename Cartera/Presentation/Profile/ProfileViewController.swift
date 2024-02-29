@@ -15,6 +15,7 @@ class ProfileViewController: UIViewController {
         static let nameFontSize: CGFloat = 24.0
         static let bodyFontSize: CGFloat = 14.0
         static let sideSpacing: CGFloat = 32.0
+        static let sectionFontSize: CGFloat = 18.0
     }
     
     @IBOutlet weak var mainContentStackView: UIStackView!
@@ -49,6 +50,7 @@ class ProfileViewController: UIViewController {
     private var viewModel: ProfileViewModel!
     private var subscriptions: [AnyCancellable] = []
     private var workSummaryViewController: WorkSummaryViewController!
+    private var skillsPillViewController: PillsHorizontalViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,8 +58,10 @@ class ProfileViewController: UIViewController {
         self.title = Self.Constants.title
         
         viewModel = ProfileViewModel()
-        subscribe()
+        setupSkillsPillViewController()
         setupWorkSummaryController()
+        
+        subscribe()
     }
     
     private func subscribe() {
@@ -80,6 +84,9 @@ class ProfileViewController: UIViewController {
         viewModel.$userLocation.sink { [weak self] location in
             self?.configureLocationLabel(location: location)
         }.store(in: &subscriptions)
+        
+        // Convert skills information to any publisher for the pills view controller to consume
+        skillsPillViewController.connectPills(pillsPublisher: viewModel.$skills.eraseToAnyPublisher())
     }
     
     private func configureLocationLabel(location: String?) {
@@ -108,6 +115,48 @@ class ProfileViewController: UIViewController {
 }
 
 extension ProfileViewController {
+    
+    func setupSkillsPillViewController() {
+        skillsPillViewController = PillsHorizontalViewController()
+        self.addChild(skillsPillViewController)
+        
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        
+        let titleContainer = UIView()
+        let titleLabel = UILabel()
+        titleLabel.text = "Skills"
+        titleLabel.font = UIFont.systemFont(ofSize: Self.Constants.sectionFontSize, weight: .bold)
+        titleLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
+        
+        titleContainer.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        titleContainer.addSubview(titleLabel)
+        titleLabel.leadingAnchor.constraint(equalTo: titleContainer.leadingAnchor, constant: 32).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: titleContainer.bottomAnchor).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: titleContainer.trailingAnchor, constant: -32).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: titleContainer.topAnchor).isActive = true
+        
+        
+        let pillsContainer = UIView()
+        pillsContainer.translatesAutoresizingMaskIntoConstraints = false
+        skillsPillViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        pillsContainer.addSubview(skillsPillViewController.view)
+        
+        skillsPillViewController.view.leadingAnchor.constraint(equalTo: pillsContainer.leadingAnchor).isActive = true
+        skillsPillViewController.view.bottomAnchor.constraint(equalTo: pillsContainer.bottomAnchor, constant: -32).isActive = true
+        skillsPillViewController.view.trailingAnchor.constraint(equalTo: pillsContainer.trailingAnchor).isActive = true
+        skillsPillViewController.view.topAnchor.constraint(equalTo: pillsContainer.topAnchor, constant: 12).isActive = true
+        
+        
+        stackView.addArrangedSubview(titleContainer)
+        stackView.addArrangedSubview(pillsContainer)
+        
+        self.mainContentStackView.addArrangedSubview(stackView)
+        
+        skillsPillViewController.didMove(toParent: self)
+    }
     
     func setupWorkSummaryController() {
         workSummaryViewController = WorkSummaryViewController()

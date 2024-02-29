@@ -1,0 +1,7 @@
+
+{
+    "skills": {
+        "languages": ["Swift", "Python", "Java", "C++", "C", "JavaScript"],
+        "other": ["SwiftData", "XCTest", "SQLite", "Git", "Version Control", "Unit Testing", "Agile Development", "JIRA", "Confluence", "MVVM", "VIPER"]
+    }
+}

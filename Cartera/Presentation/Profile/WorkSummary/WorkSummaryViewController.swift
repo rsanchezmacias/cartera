@@ -11,7 +11,6 @@ import Combine
 class WorkSummaryViewController: UIViewController {
     
     struct Constants {
-        static let titleFontSize: CGFloat = 18.0
         static let titleText: String = "Experience"
     }
     
@@ -36,7 +35,7 @@ class WorkSummaryViewController: UIViewController {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
         
-        titleLabel.font = UIFont.systemFont(ofSize: Self.Constants.titleFontSize, weight: .bold)
+        titleLabel.font = UIFont.systemFont(ofSize: ProfileViewController.Constants.sectionFontSize, weight: .bold)
         titleLabel.text = Self.Constants.titleText
         
         self.view.addSubview(titleLabel)
