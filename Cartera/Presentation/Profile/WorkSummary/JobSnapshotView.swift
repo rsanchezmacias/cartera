@@ -42,10 +42,14 @@ class JobSnapshotView: UIView {
     
     func setupWith(job: JobInfo, isTopRow: Bool = false) {
         companyLabel.text = job.company
-        dateLabel.text = job.startDate
         positionLabel.text = job.title
-        
         timelineTopLine.isHidden = isTopRow
+        
+        if let endDate = job.endDate {
+            dateLabel.text = "\(job.startDate.shortDateFormat() ?? "-") - \(endDate.shortDateFormat() ?? "-")"
+        } else {
+            dateLabel.text = "\(job.startDate.shortDateFormat() ?? "-") - Present"
+        }
     }
     
 }

@@ -18,6 +18,7 @@
 		A90143BE2B90583400309992 /* JobSnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143BD2B90583400309992 /* JobSnapshotView.swift */; };
 		A90143C02B90584600309992 /* JobSnapshotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90143BF2B90584600309992 /* JobSnapshotView.xib */; };
 		A90143C32B905C7600309992 /* WorkSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143C22B905C7600309992 /* WorkSummaryViewModel.swift */; };
+		A90143C52B906CEC00309992 /* Date+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143C42B906CEC00309992 /* Date+Util.swift */; };
 		A9EAFFE92B8824DF0093EB77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */; };
 		A9EAFFEB2B8824DF0093EB77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */; };
 		A9EAFFED2B8824DF0093EB77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFEC2B8824DF0093EB77 /* MainViewController.swift */; };
@@ -50,6 +51,7 @@
 		A90143BD2B90583400309992 /* JobSnapshotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSnapshotView.swift; sourceTree = "<group>"; };
 		A90143BF2B90584600309992 /* JobSnapshotView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobSnapshotView.xib; sourceTree = "<group>"; };
 		A90143C22B905C7600309992 /* WorkSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSummaryViewModel.swift; sourceTree = "<group>"; };
+		A90143C42B906CEC00309992 /* Date+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Util.swift"; sourceTree = "<group>"; };
 		A9EAFFE52B8824DF0093EB77 /* Cartera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				A9FC060D2B8DBD29002D6565 /* UIViewController+Extension.swift */,
+				A90143C42B906CEC00309992 /* Date+Util.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A90143C32B905C7600309992 /* WorkSummaryViewModel.swift in Sources */,
+				A90143C52B906CEC00309992 /* Date+Util.swift in Sources */,
 				A9EAFFED2B8824DF0093EB77 /* MainViewController.swift in Sources */,
 				A90143AC2B8E952C00309992 /* Container.swift in Sources */,
 				A90143BE2B90583400309992 /* JobSnapshotView.swift in Sources */,

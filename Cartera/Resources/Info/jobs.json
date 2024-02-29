@@ -34,5 +34,16 @@
                 "Developed a demo iOS application to demonstrate how the components can be easily used and integrated into any project."
             ]
         },
+        {
+            "title": "Learning Assistant",
+            "company": "Bright Success Center",
+            "startDate": "2018-01-20",
+            "endDate": "2020-05-14",
+            "location": "Merced, GA",
+            "accomplishments": [
+                "Responsible for helping students to understand introductory programming concepts, including, but not limited, to for loops, while loops, and arrays.",
+                "Responsible for helping students with basic data structures (stacks, queue, etc.) and algorithms (binary search, insertion sort, etc.)"
+            ]
+        }
     ]
 }
