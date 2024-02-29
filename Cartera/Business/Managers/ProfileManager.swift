@@ -9,8 +9,13 @@ import UIKit
 import Combine
 
 protocol ProfileManagerProtocol {
+    
+    var userInfo: UserInfo! { get }
+    var userImage: UIImage? { get }
+    
     func getUserImage() -> AnyPublisher<UIImage?, Never>
     func getUserInfo() -> AnyPublisher<UserInfo, Error>
+    
 }
 
 class ProfileManager: ProfileManagerProtocol, ObservableObject {
@@ -20,8 +25,8 @@ class ProfileManager: ProfileManagerProtocol, ObservableObject {
         static let userImageName: String = "profile_image.jpeg"
     }
     
-    private var userInfo: UserInfo!
-    private var userImage: UIImage?
+    private(set) var userInfo: UserInfo!
+    private(set) var userImage: UIImage?
     
     init() {
         userInfo = JSONParser.decode(filename: Self.Constants.userInfoFilename, type: UserInfo.self)

@@ -12,9 +12,11 @@ class Container {
     static let shared = Container()
     
     private(set) var profileManager: ProfileManagerProtocol!
+    private(set) var workManager: WorkManagerProtocol!
     
     func setup() {
         profileManager = ProfileManager()
+        workManager = WorkManager()
     }
     
 }

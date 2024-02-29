@@ -131,6 +131,7 @@
                     <connections>
                         <outlet property="fullNameLabel" destination="Lky-pm-KlA" id="ddy-j3-TfA"/>
                         <outlet property="locationLabel" destination="aIk-kt-6UI" id="r8i-BR-sXt"/>
+                        <outlet property="mainContentStackView" destination="T3T-om-opw" id="lJ4-Z9-1Wi"/>
                         <outlet property="occupationLabel" destination="iNx-Jc-GeX" id="RR4-EJ-iBK"/>
                         <outlet property="profileDescriptionLabel" destination="kRY-uL-Bda" id="fNi-U7-1iv"/>
                         <outlet property="profileImageView" destination="bAY-XJ-Vw7" id="GsF-t8-map"/>

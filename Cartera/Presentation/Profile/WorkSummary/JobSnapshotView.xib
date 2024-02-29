@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lMS-RB-9mR" customClass="JobSnapshotView" customModule="Cartera" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="536" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzf-Xf-aLl" userLabel="Main Content">
+                    <rect key="frame" x="0.0" y="0.0" width="536" height="195"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wET-gi-zqT" userLabel="Horizontal Top Content">
+                            <rect key="frame" x="0.0" y="0.0" width="536" height="195"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1WU-yy-IAt" userLabel="Timeline Container">
+                                    <rect key="frame" x="0.0" y="0.0" width="134" height="195"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IsQ-qF-46a" userLabel="Top Line">
+                                            <rect key="frame" x="62.666666666666664" y="0.0" width="1" height="80.666666666666671"/>
+                                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="1" id="UUy-z7-Boo"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Oo-2b-N6r" userLabel="Timeline Dot">
+                                            <rect key="frame" x="58" y="92.666666666666671" width="10" height="10"/>
+                                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="10" id="f8l-0M-Fne"/>
+                                                <constraint firstAttribute="width" constant="10" id="wVj-yf-t7i"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJA-AO-Kwn" userLabel="Bottom Line">
+                                            <rect key="frame" x="62.666666666666664" y="114.66666666666669" width="1" height="80.333333333333314"/>
+                                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="1" id="Aoo-XF-Bbu"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="0Oo-2b-N6r" firstAttribute="centerX" secondItem="1WU-yy-IAt" secondAttribute="centerX" constant="-4" id="5Xi-oC-tBS"/>
+                                        <constraint firstItem="IsQ-qF-46a" firstAttribute="top" secondItem="1WU-yy-IAt" secondAttribute="top" id="DeM-jx-GgR"/>
+                                        <constraint firstItem="0Oo-2b-N6r" firstAttribute="centerY" secondItem="1WU-yy-IAt" secondAttribute="centerY" id="SOA-hW-JdS"/>
+                                        <constraint firstItem="IsQ-qF-46a" firstAttribute="centerX" secondItem="0Oo-2b-N6r" secondAttribute="centerX" id="YRb-se-Cv7"/>
+                                        <constraint firstItem="iJA-AO-Kwn" firstAttribute="top" secondItem="0Oo-2b-N6r" secondAttribute="bottom" constant="12" id="hbp-HJ-s4H"/>
+                                        <constraint firstAttribute="bottom" secondItem="iJA-AO-Kwn" secondAttribute="bottom" id="ikO-cv-lRN"/>
+                                        <constraint firstItem="0Oo-2b-N6r" firstAttribute="top" secondItem="IsQ-qF-46a" secondAttribute="bottom" constant="12" id="ube-kw-aZ6"/>
+                                        <constraint firstItem="iJA-AO-Kwn" firstAttribute="centerX" secondItem="0Oo-2b-N6r" secondAttribute="centerX" id="wWx-uY-Enq"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Sg-fk-eyt" userLabel="Job Info Container">
+                                    <rect key="frame" x="134" y="0.0" width="402" height="195"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eOc-vw-AgF" userLabel="Job Labels Stack View">
+                                            <rect key="frame" x="0.0" y="59" width="386" height="77"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAR-A4-Gvy" userLabel="Position Label">
+                                                    <rect key="frame" x="0.0" y="0.0" width="386" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlueJeans by Verizon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKc-4K-Qsr" userLabel="Company Label">
+                                                    <rect key="frame" x="0.0" y="28.333333333333329" width="386" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="March 2022 - December 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs7-zp-XVN" userLabel="Date Label">
+                                                    <rect key="frame" x="0.0" y="56.666666666666679" width="386" height="20.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="eOc-vw-AgF" firstAttribute="leading" secondItem="6Sg-fk-eyt" secondAttribute="leading" id="0bA-Tk-lhs"/>
+                                        <constraint firstItem="eOc-vw-AgF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Sg-fk-eyt" secondAttribute="top" constant="16" id="524-3A-3ZY"/>
+                                        <constraint firstItem="eOc-vw-AgF" firstAttribute="centerY" secondItem="6Sg-fk-eyt" secondAttribute="centerY" id="ele-5H-qQE"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eOc-vw-AgF" secondAttribute="bottom" constant="16" id="vqY-Ya-0UY"/>
+                                        <constraint firstAttribute="trailing" secondItem="eOc-vw-AgF" secondAttribute="trailing" constant="16" id="zUm-Yq-JK2"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="wET-gi-zqT" firstAttribute="top" secondItem="pzf-Xf-aLl" secondAttribute="top" id="BXy-Dp-SQR"/>
+                        <constraint firstItem="1WU-yy-IAt" firstAttribute="width" secondItem="pzf-Xf-aLl" secondAttribute="width" multiplier="0.25" id="GP8-LJ-QXd"/>
+                        <constraint firstItem="wET-gi-zqT" firstAttribute="leading" secondItem="pzf-Xf-aLl" secondAttribute="leading" id="PRi-2k-EHu"/>
+                        <constraint firstAttribute="trailing" secondItem="wET-gi-zqT" secondAttribute="trailing" id="Twr-Eo-vKa"/>
+                        <constraint firstAttribute="bottom" secondItem="wET-gi-zqT" secondAttribute="bottom" id="gug-nk-AVH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pzf-Xf-aLl" secondAttribute="trailing" id="B94-oa-atN"/>
+                <constraint firstItem="pzf-Xf-aLl" firstAttribute="leading" secondItem="lMS-RB-9mR" secondAttribute="leading" id="N7z-Fu-6Gz"/>
+                <constraint firstAttribute="bottom" secondItem="pzf-Xf-aLl" secondAttribute="bottom" id="VNQ-Fr-IyZ"/>
+                <constraint firstItem="pzf-Xf-aLl" firstAttribute="top" secondItem="lMS-RB-9mR" secondAttribute="top" id="mhm-Jb-kS4"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="companyLabel" destination="gKc-4K-Qsr" id="rzW-sT-eRb"/>
+                <outlet property="dateLabel" destination="cs7-zp-XVN" id="EGV-ZW-sed"/>
+                <outlet property="positionLabel" destination="DAR-A4-Gvy" id="wB5-TX-Hid"/>
+                <outlet property="timelineBottomLine" destination="iJA-AO-Kwn" id="UFw-AO-mKD"/>
+                <outlet property="timelineDot" destination="0Oo-2b-N6r" id="VQH-fW-3D2"/>
+                <outlet property="timelineTopLine" destination="IsQ-qF-46a" id="dlh-Y0-yF3"/>
+            </connections>
+            <point key="canvasLocation" x="97.70992366412213" y="-116.54929577464789"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

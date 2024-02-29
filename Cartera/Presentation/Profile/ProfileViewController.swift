@@ -14,7 +14,10 @@ class ProfileViewController: UIViewController {
         static let title: String = "Profile"
         static let nameFontSize: CGFloat = 24.0
         static let bodyFontSize: CGFloat = 14.0
+        static let sideSpacing: CGFloat = 32.0
     }
+    
+    @IBOutlet weak var mainContentStackView: UIStackView!
     
     @IBOutlet weak var fullNameLabel: UILabel! {
         didSet {
@@ -45,6 +48,7 @@ class ProfileViewController: UIViewController {
     
     private var viewModel: ProfileViewModel!
     private var subscriptions: [AnyCancellable] = []
+    private var workSummaryViewController: WorkSummaryViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +57,7 @@ class ProfileViewController: UIViewController {
         
         viewModel = ProfileViewModel()
         subscribe()
+        setupWorkSummaryController()
     }
     
     private func subscribe() {
@@ -98,6 +103,28 @@ class ProfileViewController: UIViewController {
             locationLabel.font = UIFont.systemFont(ofSize: Self.Constants.bodyFontSize, weight: .regular)
             locationLabel.tintColor = .lightGray
         }
+    }
+    
+}
+
+extension ProfileViewController {
+    
+    func setupWorkSummaryController() {
+        workSummaryViewController = WorkSummaryViewController()
+        self.addChild(workSummaryViewController)
+        
+        let containerView = UIView()
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        self.mainContentStackView.addArrangedSubview(containerView)
+        
+        containerView.addSubview(workSummaryViewController.view)
+        workSummaryViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        workSummaryViewController.view.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
+        workSummaryViewController.view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: Self.Constants.sideSpacing).isActive = true
+        workSummaryViewController.view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: Self.Constants.sideSpacing).isActive = true
+        workSummaryViewController.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
+        
+        workSummaryViewController.didMove(toParent: self)
     }
     
 }
