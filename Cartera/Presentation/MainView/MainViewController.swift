@@ -13,12 +13,14 @@ class MainViewController: UITabBarController {
         static let separatorHeight: CGFloat = 1
     }
     
-    private var navigationControllers: [UINavigationController]!
+    private var navigationControllers: [NavigationController]!
     
     private var separatorView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBar.isTranslucent = false
         self.setupContent()
     }
     
@@ -35,7 +37,7 @@ class MainViewController: UITabBarController {
         }
         
         self.navigationControllers = viewControllers.map { viewController in
-            let navigationController = UINavigationController(rootViewController: viewController)
+            let navigationController = NavigationController(rootViewController: viewController)
             navigationController.tabBarItem = viewController.tabBarItem
             return navigationController
         }

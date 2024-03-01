@@ -25,6 +25,7 @@
 		A90143CF2B9130FE00309992 /* PillsHorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143CE2B9130FE00309992 /* PillsHorizontalViewController.swift */; };
 		A90143D12B9136F400309992 /* PillLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143D02B9136F400309992 /* PillLabelCollectionViewCell.swift */; };
 		A91796482B914DD600E892AF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91796472B914DD600E892AF /* String+Extension.swift */; };
+		A917964E2B925FE100E892AF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A917964D2B925FE100E892AF /* NavigationController.swift */; };
 		A9EAFFE92B8824DF0093EB77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */; };
 		A9EAFFEB2B8824DF0093EB77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */; };
 		A9EAFFED2B8824DF0093EB77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFEC2B8824DF0093EB77 /* MainViewController.swift */; };
@@ -64,6 +65,7 @@
 		A90143CE2B9130FE00309992 /* PillsHorizontalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsHorizontalViewController.swift; sourceTree = "<group>"; };
 		A90143D02B9136F400309992 /* PillLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillLabelCollectionViewCell.swift; sourceTree = "<group>"; };
 		A91796472B914DD600E892AF /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		A917964D2B925FE100E892AF /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		A9EAFFE52B8824DF0093EB77 /* Cartera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,14 @@
 				A90143D02B9136F400309992 /* PillLabelCollectionViewCell.swift */,
 			);
 			path = Pills_Horizontal_View;
+			sourceTree = "<group>";
+		};
+		A917964C2B925FCF00E892AF /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				A917964D2B925FE100E892AF /* NavigationController.swift */,
+			);
+			path = NavigationController;
 			sourceTree = "<group>";
 		};
 		A9EA00002B895CF70093EB77 /* Resources */ = {
@@ -287,6 +297,7 @@
 		A9FC060F2B8DC66F002D6565 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A917964C2B925FCF00E892AF /* NavigationController */,
 				A90143CD2B9130D600309992 /* Pills_Horizontal_View */,
 				A9FC06102B8DC67B002D6565 /* TabBarItem.swift */,
 			);
@@ -393,6 +404,7 @@
 				A90143AF2B8E96BB00309992 /* UserInfo.swift in Sources */,
 				A9FC060E2B8DBD29002D6565 /* UIViewController+Extension.swift in Sources */,
 				A9FC06132B8DC6B5002D6565 /* WorkViewController.swift in Sources */,
+				A917964E2B925FE100E892AF /* NavigationController.swift in Sources */,
 				A9FC05FD2B8D50D4002D6565 /* JSONParser.swift in Sources */,
 				A90143CF2B9130FE00309992 /* PillsHorizontalViewController.swift in Sources */,
 				A9EAFFEB2B8824DF0093EB77 /* SceneDelegate.swift in Sources */,

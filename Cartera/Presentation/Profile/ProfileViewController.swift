@@ -55,7 +55,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = Self.Constants.title
+        (self.navigationController as? NavigationController)?.configureAsMainNavigationBar(viewController: self, title: "Profile")
         
         viewModel = ProfileViewModel()
         setupSkillsPillViewController()
