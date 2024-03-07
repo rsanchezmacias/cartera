@@ -1,0 +1,105 @@
+
+{
+    "schools": [
+        {
+            "name": "University of California, Merced",
+            "image_name": "ucmerced_airview.jpeg",
+            "location": "Merced, CA",
+            "start_date": "08-01-2017",
+            "graduation_date": "05-15-2021",
+            "details": [
+                "4.0 Cumulative GPA",
+                "School of Engineering - Graduation Highest Honors"
+            ],
+            "terms": [
+                {
+                    "term": "Fall 2017",
+                    "courses": [
+                        {
+                            "code": "CSE 021",
+                            "title": "Introduction to Computing I",
+                            "grade": "A"
+                        },
+                        {
+                            "code": "BIO 005",
+                            "title": "Biology Today",
+                            "grade": "A+"
+                        },
+                        {
+                            "code": "MATH 021",
+                            "title": "Calc I Phys Sciences & Eng",
+                            "grade": "A+"
+                        },
+                        {
+                            "code": "PSY 001",
+                            "title": "Introduction to Psychology",
+                            "grade": "A"
+                        }
+                    ]
+                },
+                {
+                    "term": "Spring 2018",
+                    "courses": [
+                        {
+                            "code": "CORE 001",
+                            "title": "The World at Home",
+                            "grade": "A"
+                        },
+                        {
+                            "code": "CSE 021",
+                            "title": "Introduction to Computing II",
+                            "grade": "A"
+                        },
+                        {
+                            "code": "MATH 022",
+                            "title": "Calc II Phys Sciences & Eng",
+                            "grade": "A+"
+                        },
+                        {
+                            "code": "PHYS 008",
+                            "title": "Introductory Physics I",
+                            "grade": "A"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "National University of Singapore",
+            "image_name": "nus_airview.jpeg",
+            "location": "Singapore",
+            "start_date": "01-05-2020",
+            "graduation_date": "06-1-2020",
+            "details": [
+                "Enrolled in software engineering courses at NUS"
+            ],
+            "terms": [
+                {
+                    "term": "Spring 2020",
+                    "courses": [
+                        {
+                            "code": "EAPE 013",
+                            "title": "MATH: INTRO MATHEMATICS",
+                            "grade": "P"
+                        },
+                        {
+                            "code": "EAPE 020",
+                            "title": "RGST: WORLD RELIGIONS",
+                            "grade": "P"
+                        },
+                        {
+                            "code": "EAPE 108",
+                            "title": "CPS: MEDIA COMPUTING",
+                            "grade": "P"
+                        },
+                        {
+                            "code": "EAPE 110",
+                            "title": "CPS: OBJECT ORIENT PROG",
+                            "grade": "P"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -26,6 +26,12 @@
 		A90143D12B9136F400309992 /* PillLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90143D02B9136F400309992 /* PillLabelCollectionViewCell.swift */; };
 		A91796482B914DD600E892AF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91796472B914DD600E892AF /* String+Extension.swift */; };
 		A917964E2B925FE100E892AF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A917964D2B925FE100E892AF /* NavigationController.swift */; };
+		A9BD42102B999E7000568556 /* education.json in Resources */ = {isa = PBXBuildFile; fileRef = A9BD420F2B999E7000568556 /* education.json */; };
+		A9BD42122B99A51300568556 /* EducationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BD42112B99A51300568556 /* EducationManager.swift */; };
+		A9BD42142B99A52700568556 /* SchoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BD42132B99A52700568556 /* SchoolInfo.swift */; };
+		A9BD42162B99A52F00568556 /* TermInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BD42152B99A52F00568556 /* TermInfo.swift */; };
+		A9BD42192B99A91500568556 /* nus_airview.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A9BD42172B99A91500568556 /* nus_airview.jpeg */; };
+		A9BD421A2B99A91500568556 /* ucmerced_airview.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A9BD42182B99A91500568556 /* ucmerced_airview.jpeg */; };
 		A9EAFFE92B8824DF0093EB77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */; };
 		A9EAFFEB2B8824DF0093EB77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */; };
 		A9EAFFED2B8824DF0093EB77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFEC2B8824DF0093EB77 /* MainViewController.swift */; };
@@ -66,6 +72,12 @@
 		A90143D02B9136F400309992 /* PillLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillLabelCollectionViewCell.swift; sourceTree = "<group>"; };
 		A91796472B914DD600E892AF /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		A917964D2B925FE100E892AF /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		A9BD420F2B999E7000568556 /* education.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = education.json; sourceTree = "<group>"; };
+		A9BD42112B99A51300568556 /* EducationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationManager.swift; sourceTree = "<group>"; };
+		A9BD42132B99A52700568556 /* SchoolInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfo.swift; sourceTree = "<group>"; };
+		A9BD42152B99A52F00568556 /* TermInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermInfo.swift; sourceTree = "<group>"; };
+		A9BD42172B99A91500568556 /* nus_airview.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nus_airview.jpeg; sourceTree = "<group>"; };
+		A9BD42182B99A91500568556 /* ucmerced_airview.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ucmerced_airview.jpeg; sourceTree = "<group>"; };
 		A9EAFFE52B8824DF0093EB77 /* Cartera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +117,8 @@
 				A90143AE2B8E96BB00309992 /* UserInfo.swift */,
 				A90143B82B90523F00309992 /* JobInfo.swift */,
 				A90143CA2B912FE300309992 /* SkillsInfo.swift */,
+				A9BD42132B99A52700568556 /* SchoolInfo.swift */,
+				A9BD42152B99A52F00568556 /* TermInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -140,6 +154,8 @@
 		A9EA00002B895CF70093EB77 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A9BD42172B99A91500568556 /* nus_airview.jpeg */,
+				A9BD42182B99A91500568556 /* ucmerced_airview.jpeg */,
 				A9FC06002B8D5300002D6565 /* Info */,
 				A9FC05FE2B8D52EA002D6565 /* profile_image.jpeg */,
 				A9EAFFF12B8824E20093EB77 /* Assets.xcassets */,
@@ -234,6 +250,7 @@
 				A90143A92B8E94A000309992 /* ProfileManager.swift */,
 				A90143B62B904C9300309992 /* WorkManager.swift */,
 				A90143C82B912F0600309992 /* SkillsManager.swift */,
+				A9BD42112B99A51300568556 /* EducationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -290,6 +307,7 @@
 				A9FC06012B8D532A002D6565 /* profile.json */,
 				A90143B42B90486400309992 /* jobs.json */,
 				A90143C62B912DCE00309992 /* skills.json */,
+				A9BD420F2B999E7000568556 /* education.json */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -362,8 +380,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BD42192B99A91500568556 /* nus_airview.jpeg in Resources */,
 				A9FC06022B8D532A002D6565 /* profile.json in Resources */,
 				A90143C72B912DCE00309992 /* skills.json in Resources */,
+				A9BD421A2B99A91500568556 /* ucmerced_airview.jpeg in Resources */,
 				A9FC05FF2B8D52EA002D6565 /* profile_image.jpeg in Resources */,
 				A9FC06042B8D5771002D6565 /* ProfileViewController.storyboard in Resources */,
 				A9FC060A2B8D582A002D6565 /* EducationViewController.storyboard in Resources */,
@@ -372,6 +392,7 @@
 				A90143B52B90486400309992 /* jobs.json in Resources */,
 				A9FC06152B8DC6BF002D6565 /* WorkViewController.storyboard in Resources */,
 				A90143C02B90584600309992 /* JobSnapshotView.xib in Resources */,
+				A9BD42102B999E7000568556 /* education.json in Resources */,
 				A9EAFFF02B8824DF0093EB77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,10 +418,13 @@
 				A90143D12B9136F400309992 /* PillLabelCollectionViewCell.swift in Sources */,
 				A90143B72B904C9300309992 /* WorkManager.swift in Sources */,
 				A9FC06112B8DC67B002D6565 /* TabBarItem.swift in Sources */,
+				A9BD42122B99A51300568556 /* EducationManager.swift in Sources */,
+				A9BD42162B99A52F00568556 /* TermInfo.swift in Sources */,
 				A90143BC2B9055CF00309992 /* WorkSummaryViewController.swift in Sources */,
 				A90143B12B8E994A00309992 /* ProfileViewModel.swift in Sources */,
 				A9EAFFE92B8824DF0093EB77 /* AppDelegate.swift in Sources */,
 				A9FC06062B8D577B002D6565 /* ProfileViewController.swift in Sources */,
+				A9BD42142B99A52700568556 /* SchoolInfo.swift in Sources */,
 				A90143AF2B8E96BB00309992 /* UserInfo.swift in Sources */,
 				A9FC060E2B8DBD29002D6565 /* UIViewController+Extension.swift in Sources */,
 				A9FC06132B8DC6B5002D6565 /* WorkViewController.swift in Sources */,
