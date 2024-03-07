@@ -11,7 +11,7 @@ class EducationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Education"
+        (self.navigationController as? NavigationController)?.configureAsMainNavigationBar(viewController: self, title: "Education")
     }
     
 }
