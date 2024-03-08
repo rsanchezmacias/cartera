@@ -15,7 +15,7 @@ struct School: Codable {
     let startDate: String
     let graduationDate: String
     let details: [String]
-    let terms: Term
+    let terms: [Term]
 
     enum CodingKeys: String, CodingKey {
         case name

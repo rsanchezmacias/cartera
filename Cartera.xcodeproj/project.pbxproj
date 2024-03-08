@@ -36,6 +36,8 @@
 		A9BD42212B99AA4000568556 /* SchoolViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BD42202B99AA4000568556 /* SchoolViewController.storyboard */; };
 		A9BD42232B99AAB300568556 /* SchoolHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BD42222B99AAB300568556 /* SchoolHeaderView.swift */; };
 		A9BD42252B99AACA00568556 /* SchoolTermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BD42242B99AACA00568556 /* SchoolTermViewController.swift */; };
+		A9BD42272B9A557700568556 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BD42262B9A557700568556 /* UIView+Extension.swift */; };
+		A9BD42292B9B9DF100568556 /* EducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BD42282B9B9DF100568556 /* EducationViewModel.swift */; };
 		A9EAFFE92B8824DF0093EB77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */; };
 		A9EAFFEB2B8824DF0093EB77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */; };
 		A9EAFFED2B8824DF0093EB77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAFFEC2B8824DF0093EB77 /* MainViewController.swift */; };
@@ -86,6 +88,8 @@
 		A9BD42202B99AA4000568556 /* SchoolViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SchoolViewController.storyboard; sourceTree = "<group>"; };
 		A9BD42222B99AAB300568556 /* SchoolHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolHeaderView.swift; sourceTree = "<group>"; };
 		A9BD42242B99AACA00568556 /* SchoolTermViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolTermViewController.swift; sourceTree = "<group>"; };
+		A9BD42262B9A557700568556 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A9BD42282B9B9DF100568556 /* EducationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewModel.swift; sourceTree = "<group>"; };
 		A9EAFFE52B8824DF0093EB77 /* Cartera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cartera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EAFFE82B8824DF0093EB77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9EAFFEA2B8824DF0093EB77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,9 +193,9 @@
 		A9EA00002B895CF70093EB77 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A9FC06002B8D5300002D6565 /* Info */,
 				A9BD42172B99A91500568556 /* nus_airview.jpeg */,
 				A9BD42182B99A91500568556 /* ucmerced_airview.jpeg */,
-				A9FC06002B8D5300002D6565 /* Info */,
 				A9FC05FE2B8D52EA002D6565 /* profile_image.jpeg */,
 				A9EAFFF12B8824E20093EB77 /* Assets.xcassets */,
 			);
@@ -296,6 +300,7 @@
 				A9FC060D2B8DBD29002D6565 /* UIViewController+Extension.swift */,
 				A90143C42B906CEC00309992 /* Date+Util.swift */,
 				A91796472B914DD600E892AF /* String+Extension.swift */,
+				A9BD42262B9A557700568556 /* UIView+Extension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				A9BD421B2B99A9B400568556 /* School */,
+				A9BD42282B9B9DF100568556 /* EducationViewModel.swift */,
 				A9FC06072B8D5820002D6565 /* EducationViewController.swift */,
 				A9FC06092B8D582A002D6565 /* EducationViewController.storyboard */,
 			);
@@ -441,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BD42272B9A557700568556 /* UIView+Extension.swift in Sources */,
 				A90143C32B905C7600309992 /* WorkSummaryViewModel.swift in Sources */,
 				A90143C92B912F0600309992 /* SkillsManager.swift in Sources */,
 				A9BD421F2B99AA1E00568556 /* SchoolViewController.swift in Sources */,
@@ -463,6 +470,7 @@
 				A9EAFFE92B8824DF0093EB77 /* AppDelegate.swift in Sources */,
 				A9FC06062B8D577B002D6565 /* ProfileViewController.swift in Sources */,
 				A9BD42142B99A52700568556 /* SchoolInfo.swift in Sources */,
+				A9BD42292B9B9DF100568556 /* EducationViewModel.swift in Sources */,
 				A90143AF2B8E96BB00309992 /* UserInfo.swift in Sources */,
 				A9FC060E2B8DBD29002D6565 /* UIViewController+Extension.swift in Sources */,
 				A9BD42252B99AACA00568556 /* SchoolTermViewController.swift in Sources */,

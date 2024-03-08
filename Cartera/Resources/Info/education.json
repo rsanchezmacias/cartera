@@ -5,8 +5,8 @@
             "name": "University of California, Merced",
             "image_name": "ucmerced_airview.jpeg",
             "location": "Merced, CA",
-            "start_date": "08-01-2017",
-            "graduation_date": "05-15-2021",
+            "start_date": "2017-08-01",
+            "graduation_date": "2021-05-14",
             "details": [
                 "4.0 Cumulative GPA",
                 "School of Engineering - Graduation Highest Honors"
@@ -68,8 +68,8 @@
             "name": "National University of Singapore",
             "image_name": "nus_airview.jpeg",
             "location": "Singapore",
-            "start_date": "01-05-2020",
-            "graduation_date": "06-1-2020",
+            "start_date": "2020-01-05",
+            "graduation_date": "2020-06-01",
             "details": [
                 "Enrolled in software engineering courses at NUS"
             ],

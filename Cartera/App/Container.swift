@@ -14,11 +14,13 @@ class Container {
     private(set) var profileManager: ProfileManagerProtocol!
     private(set) var workManager: WorkManagerProtocol!
     private(set) var skillsManager: SkillsManagerProtocol!
+    private(set) var educationManager: EducationManagerProtocol!
     
     func setup() {
         profileManager = ProfileManager()
         workManager = WorkManager()
         skillsManager = SkillsManager()
+        educationManager = EducationManager()
     }
     
 }

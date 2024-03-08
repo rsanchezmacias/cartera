@@ -15,9 +15,41 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9D0-Qi-E7a">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aFQ-CY-uXr" userLabel="Main Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" placeholder="YES" id="u2Q-XA-hal"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YAk-gK-9g7" firstAttribute="top" secondItem="aFQ-CY-uXr" secondAttribute="top" id="86v-cj-xkP"/>
+                                    <constraint firstItem="aFQ-CY-uXr" firstAttribute="trailing" secondItem="YAk-gK-9g7" secondAttribute="trailing" id="Dia-HM-Osh"/>
+                                    <constraint firstItem="aFQ-CY-uXr" firstAttribute="bottom" secondItem="YAk-gK-9g7" secondAttribute="bottom" id="bGt-Ze-UwW"/>
+                                    <constraint firstItem="aFQ-CY-uXr" firstAttribute="leading" secondItem="YAk-gK-9g7" secondAttribute="leading" id="en8-ck-s0k"/>
+                                    <constraint firstItem="JaQ-2U-B77" firstAttribute="trailing" secondItem="aFQ-CY-uXr" secondAttribute="trailing" id="nTg-4J-H16"/>
+                                    <constraint firstItem="aFQ-CY-uXr" firstAttribute="leading" secondItem="JaQ-2U-B77" secondAttribute="leading" id="tfD-sT-Cez"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="YAk-gK-9g7"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="JaQ-2U-B77"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9D0-Qi-E7a" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="JuO-Ho-Xsw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="9D0-Qi-E7a" secondAttribute="bottom" id="RC9-z5-pXt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9D0-Qi-E7a" secondAttribute="trailing" id="jfT-cd-DlT"/>
+                            <constraint firstItem="9D0-Qi-E7a" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="lbD-ek-3wr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainContentStackView" destination="aFQ-CY-uXr" id="s2a-94-BYc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
