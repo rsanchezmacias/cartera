@@ -16,11 +16,13 @@ class SchoolViewController: UIViewController {
     private var school: School?
     
     private var schoolHeaderView: SchoolHeaderView?
+    private var termsStackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupHeaderContainerView()
+        setupTerms()
     }
     
     func setupHeaderContainerView() {
@@ -33,6 +35,28 @@ class SchoolViewController: UIViewController {
         if let school = school {
             headerView.setup(school: school)
         }
+    }
+    
+    func setupTerms() {
+        guard let school = school else { return }
+        
+        termsStackView = UIStackView()
+        termsStackView.axis = .vertical
+        termsContainerView.addSubview(termsStackView)
+        termsStackView.embed(in: termsContainerView)
+        
+        for term in school.terms {
+            setupTerm(term)
+        }
+    }
+    
+    func setupTerm(_ term: Term) {
+        let schoolTermViewController = SchoolTermViewController()
+        schoolTermViewController.set(term: term)
+        
+        termsStackView.addArrangedSubview(schoolTermViewController.view)
+        self.addChild(schoolTermViewController)
+        schoolTermViewController.didMove(toParent: self)
     }
     
     func set(school: School) {

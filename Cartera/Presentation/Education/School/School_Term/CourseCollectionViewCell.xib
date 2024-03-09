@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CourseCollectionViewCell" id="iN0-l3-epB" customClass="CourseCollectionViewCell" customModule="Cartera" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="293" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fL-sl-ZhB" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="0.0" width="293" height="114"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KQ5-8u-Caf" userLabel="Top Level Stack View">
+                            <rect key="frame" x="0.0" y="0.0" width="293" height="114"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yjr-d4-uW9" userLabel="Code Container View">
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="44.333333333333336"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="X7B-9J-4D9" userLabel="Code Stack View">
+                                            <rect key="frame" x="16" y="15.999999999999998" width="261" height="20.333333333333329"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CSE 165" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe0-h6-VVb" userLabel="Code Label">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoQ-9v-GzN" userLabel="Grade Label">
+                                                    <rect key="frame" x="250" y="0.0" width="11" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="X7B-9J-4D9" secondAttribute="bottom" constant="8" id="9eS-I4-kFd"/>
+                                        <constraint firstAttribute="trailing" secondItem="X7B-9J-4D9" secondAttribute="trailing" constant="16" id="H2f-dN-aj7"/>
+                                        <constraint firstItem="X7B-9J-4D9" firstAttribute="top" secondItem="Yjr-d4-uW9" secondAttribute="top" constant="16" id="YAe-5B-x0y"/>
+                                        <constraint firstItem="X7B-9J-4D9" firstAttribute="leading" secondItem="Yjr-d4-uW9" secondAttribute="leading" constant="16" id="sen-ld-1Ji"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgS-lW-4yf" userLabel="Course Title Container">
+                                    <rect key="frame" x="0.0" y="44.333333333333336" width="293" height="69.666666666666657"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objected Oriented Programming &amp; Design" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz5-l8-7G6" userLabel="Title Label">
+                                            <rect key="frame" x="16" y="0.0" width="252" height="53.666666666666664"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Uz5-l8-7G6" firstAttribute="leading" secondItem="UgS-lW-4yf" secondAttribute="leading" constant="16" id="5t9-rj-c1J"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Uz5-l8-7G6" secondAttribute="trailing" constant="16" id="LTZ-gr-dz2"/>
+                                        <constraint firstItem="Uz5-l8-7G6" firstAttribute="top" secondItem="UgS-lW-4yf" secondAttribute="top" id="P52-qT-2Dr"/>
+                                        <constraint firstAttribute="bottom" secondItem="Uz5-l8-7G6" secondAttribute="bottom" constant="16" id="iLd-JD-QzY"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="KQ5-8u-Caf" secondAttribute="bottom" id="5nb-vZ-idM"/>
+                        <constraint firstItem="KQ5-8u-Caf" firstAttribute="leading" secondItem="9fL-sl-ZhB" secondAttribute="leading" id="jqj-3t-DKG"/>
+                        <constraint firstItem="KQ5-8u-Caf" firstAttribute="top" secondItem="9fL-sl-ZhB" secondAttribute="top" id="pLf-Kq-Hwd"/>
+                        <constraint firstAttribute="trailing" secondItem="KQ5-8u-Caf" secondAttribute="trailing" id="qLX-kU-KuN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9fL-sl-ZhB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6Q1-Ar-gfD"/>
+                <constraint firstItem="9fL-sl-ZhB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bls-BT-vNm"/>
+                <constraint firstAttribute="bottom" secondItem="9fL-sl-ZhB" secondAttribute="bottom" id="L3G-rs-blb"/>
+                <constraint firstAttribute="trailing" secondItem="9fL-sl-ZhB" secondAttribute="trailing" id="V3z-78-tpd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="courseCodeLabel" destination="Oe0-h6-VVb" id="LA5-pX-aD1"/>
+                <outlet property="courseGradeLabel" destination="qoQ-9v-GzN" id="7kf-KR-ybD"/>
+                <outlet property="courseTitleLabel" destination="Uz5-l8-7G6" id="RcG-nF-zfD"/>
+            </connections>
+            <point key="canvasLocation" x="-84.732824427480907" y="-239.43661971830988"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
