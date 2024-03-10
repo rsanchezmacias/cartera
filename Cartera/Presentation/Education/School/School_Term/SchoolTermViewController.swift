@@ -35,6 +35,13 @@ class SchoolTermViewController: UIViewController {
         super.viewDidLayoutSubviews()
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        
+        coordinator.animate { [weak self] _ in
+            self?.reloadCollectionView()
+        }
+    }
+    
     func setup() {
         guard let term = term else {
             return
@@ -42,15 +49,23 @@ class SchoolTermViewController: UIViewController {
         
         titleLabel.text = term.term
         courses = term.courses
+        reloadCollectionView()
+    }
+    
+    func set(term: Term) {
+        self.term = term
+    }
+    
+    private func reloadCollectionView() {
         collectionView.reloadData()
         collectionView.layoutIfNeeded()
         
         collectionViewContainerHeight.constant = collectionView.collectionViewLayout.collectionViewContentSize.height
     }
     
-    func set(term: Term) {
-        self.term = term
-    }
+}
+
+extension SchoolTermViewController {
     
     private func setupStackView() {
         contentStackView = UIStackView(arrangedSubviews: [titleContainerView, collectionViewContainerView])
