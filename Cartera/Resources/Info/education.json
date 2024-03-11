@@ -61,6 +61,121 @@
                             "grade": "A"
                         }
                     ]
+                },
+                {
+                    "term": "Fall 2018",
+                    "courses": [
+                        {
+                            "code": "CSE 015",
+                            "title": "Discrete Mathematics",
+                            "grade": "A+"
+                        },
+                        {
+                            "code": "CSE 030",
+                            "title": "Data Structures",
+                            "grade": "A"
+                        },
+                        {
+                            "code": "MATH 023",
+                            "title": "Vector Calculus",
+                            "grade": "A+"
+                        },
+                        {
+                            "code": "PHYS 009",
+                            "title": "Introductory Physics II",
+                            "grade": "A"
+                        }
+                    ]
+                },
+                {
+                    "term": "Spring 2019",
+                    "courses": [
+                        {
+                            "code": "CSE 031",
+                            "title": "Computer Organization",
+                            "grade": "A"
+                        },
+                        {
+                            "code": "CSE 165",
+                            "title": "Intro to Object Orient Program",
+                            "grade": "A"
+                        },
+                        {
+                            "code": "ENGR 175",
+                            "title": "Information Systems",
+                            "grade": "A+"
+                        },
+                        {
+                            "code": "MATH 032",
+                            "title": "Probability and Statistics",
+                            "grade": "A"
+                        }
+                    ]
+                },
+                {
+                    "term": "Fall 2019",
+                    "courses": [
+                        {
+                            "code": "CSE 100",
+                            "title": "Algorithm Design and Analysis",
+                            "grade": "A+"
+                        },
+                        {
+                            "code": "CSE 140",
+                            "title": "Computer Architecture",
+                            "grade": "A"
+                        },
+                        {
+                            "code": "CSE 195",
+                            "title": "Upper Div Undergrad Research",
+                            "grade": "A"
+                        },
+                        {
+                            "code": "MATH 024",
+                            "title": "Lin Alg & Diff Eqs",
+                            "grade": "A"
+                        }
+                    ]
+                },
+                {
+                    "term": "Fall 2020",
+                    "courses": [
+                        {
+                            "code": "CSE 111",
+                            "title": "Database Systems",
+                            "grade": "A+"
+                        },
+                        {
+                            "code": "CSE 175",
+                            "title": "Intro to Artificial Intell",
+                            "grade": "A+"
+                        },
+                        {
+                            "code": "CSE 150",
+                            "title": "Operating Systems",
+                            "grade": "A"
+                        }
+                    ]
+                },
+                {
+                    "term": "Spring 2021",
+                    "courses": [
+                        {
+                            "code": "CSE 120",
+                            "title": "Software Engineering",
+                            "grade": "A+"
+                        },
+                        {
+                            "code": "ENGR 065",
+                            "title": "Circuit Theory",
+                            "grade": "A+"
+                        },
+                        {
+                            "code": "WRI 100",
+                            "title": "Advanced Writing",
+                            "grade": "A+"
+                        }
+                    ]
                 }
             ]
         },
