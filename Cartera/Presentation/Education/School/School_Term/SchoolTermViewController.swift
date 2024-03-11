@@ -36,6 +36,7 @@ class SchoolTermViewController: UIViewController {
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
         
         coordinator.animate { [weak self] _ in
             self?.reloadCollectionView()
@@ -60,7 +61,8 @@ class SchoolTermViewController: UIViewController {
         collectionView.reloadData()
         collectionView.layoutIfNeeded()
         
-        collectionViewContainerHeight.constant = collectionView.collectionViewLayout.collectionViewContentSize.height
+        let contentHeight = collectionView.collectionViewLayout.collectionViewContentSize.height
+        collectionViewContainerHeight.constant = contentHeight + 32
     }
     
 }
@@ -87,7 +89,7 @@ extension SchoolTermViewController {
     private func setupCollectionViewContainer() {
         collectionViewContainerView = UIView()
         collectionViewContainerView.addSubview(collectionView)
-        collectionView.embed(in: collectionViewContainerView, left: 24, top: 16, right: -24, bottom: 16)
+        collectionView.embed(in: collectionViewContainerView, left: 24, top: 16, right: -24, bottom: -16)
         
         collectionViewContainerHeight = collectionViewContainerView.heightAnchor.constraint(equalToConstant: 400)
         collectionViewContainerHeight.isActive = true

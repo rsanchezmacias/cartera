@@ -52,7 +52,7 @@
                                     <rect key="frame" x="0.0" y="44.333333333333336" width="293" height="69.666666666666657"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objected Oriented Programming &amp; Design" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz5-l8-7G6" userLabel="Title Label">
-                                            <rect key="frame" x="16" y="0.0" width="252" height="53.666666666666664"/>
+                                            <rect key="frame" x="16" y="4" width="252" height="53.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -62,8 +62,8 @@
                                     <constraints>
                                         <constraint firstItem="Uz5-l8-7G6" firstAttribute="leading" secondItem="UgS-lW-4yf" secondAttribute="leading" constant="16" id="5t9-rj-c1J"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Uz5-l8-7G6" secondAttribute="trailing" constant="16" id="LTZ-gr-dz2"/>
-                                        <constraint firstItem="Uz5-l8-7G6" firstAttribute="top" secondItem="UgS-lW-4yf" secondAttribute="top" id="P52-qT-2Dr"/>
-                                        <constraint firstAttribute="bottom" secondItem="Uz5-l8-7G6" secondAttribute="bottom" constant="16" id="iLd-JD-QzY"/>
+                                        <constraint firstItem="Uz5-l8-7G6" firstAttribute="top" secondItem="UgS-lW-4yf" secondAttribute="top" constant="4" id="P52-qT-2Dr"/>
+                                        <constraint firstAttribute="bottom" secondItem="Uz5-l8-7G6" secondAttribute="bottom" constant="12" id="iLd-JD-QzY"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -87,6 +87,8 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="codeContainerView" destination="Yjr-d4-uW9" id="Fd8-Y6-c9z"/>
+                <outlet property="contentContainer" destination="9fL-sl-ZhB" id="3da-Pm-ceQ"/>
                 <outlet property="courseCodeLabel" destination="Oe0-h6-VVb" id="LA5-pX-aD1"/>
                 <outlet property="courseGradeLabel" destination="qoQ-9v-GzN" id="7kf-KR-ybD"/>
                 <outlet property="courseTitleLabel" destination="Uz5-l8-7G6" id="RcG-nF-zfD"/>

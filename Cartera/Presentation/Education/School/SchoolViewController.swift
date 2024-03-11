@@ -43,7 +43,7 @@ class SchoolViewController: UIViewController {
         termsStackView = UIStackView()
         termsStackView.axis = .vertical
         termsContainerView.addSubview(termsStackView)
-        termsStackView.embed(in: termsContainerView)
+        termsStackView.embed(in: termsContainerView, top: 16, bottom: -16)
         
         for term in school.terms {
             setupTerm(term)
