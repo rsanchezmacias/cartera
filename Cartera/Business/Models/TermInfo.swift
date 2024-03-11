@@ -5,7 +5,7 @@
 //  Created by Ricardo Sanchez-Macias on 3/6/24.
 //
 
-import Foundation
+import UIKit
 
 struct Course: Codable {
     
@@ -13,11 +13,24 @@ struct Course: Codable {
     let title: String
     let grade: String
     
+    var colorCode: UIColor?
+    
+    var category: String {
+        let components = code.components(separatedBy: .whitespaces)
+        return components.count > 0 ? components[0] : "ERROR"
+    }
+    
+    enum CodingKeys: CodingKey {
+        case code
+        case title
+        case grade
+    }
+    
 }
 
 struct Term: Codable {
     
     let term: String
-    let courses: [Course]
+    var courses: [Course]
     
 }

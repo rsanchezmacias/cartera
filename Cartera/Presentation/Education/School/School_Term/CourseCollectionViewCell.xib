@@ -20,39 +20,63 @@
                             <rect key="frame" x="0.0" y="0.0" width="293" height="114"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yjr-d4-uW9" userLabel="Code Container View">
-                                    <rect key="frame" x="0.0" y="0.0" width="293" height="44.333333333333336"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="60.333333333333336"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="X7B-9J-4D9" userLabel="Code Stack View">
-                                            <rect key="frame" x="16" y="15.999999999999998" width="261" height="20.333333333333329"/>
+                                            <rect key="frame" x="16" y="15.999999999999998" width="261" height="28.333333333333329"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CSE 165" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe0-h6-VVb" userLabel="Code Label">
-                                                    <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="20.333333333333332"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoQ-9v-GzN" userLabel="Grade Label">
-                                                    <rect key="frame" x="250" y="0.0" width="11" height="20.333333333333332"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBf-lr-Nqb" userLabel="Code Label Container">
+                                                    <rect key="frame" x="0.0" y="0.0" width="185.66666666666666" height="28.333333333333332"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CSE 165" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe0-h6-VVb" userLabel="Code Label">
+                                                            <rect key="frame" x="8" y="4" width="169.66666666666666" height="20.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="Oe0-h6-VVb" secondAttribute="bottom" constant="4" id="a7i-O8-9D1"/>
+                                                        <constraint firstItem="Oe0-h6-VVb" firstAttribute="leading" secondItem="zBf-lr-Nqb" secondAttribute="leading" constant="8" id="pzA-XA-yFP"/>
+                                                        <constraint firstItem="Oe0-h6-VVb" firstAttribute="top" secondItem="zBf-lr-Nqb" secondAttribute="top" constant="4" id="wKl-Iq-inL"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Oe0-h6-VVb" secondAttribute="trailing" constant="8" id="y1W-ym-zJ4"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEB-Ph-Rg2" userLabel="Grade Label Container">
+                                                    <rect key="frame" x="196.66666666666666" y="0.0" width="64.333333333333343" height="28.333333333333332"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoQ-9v-GzN" userLabel="Grade Label">
+                                                            <rect key="frame" x="8.0000000000000036" y="4" width="48.333333333333343" height="20.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="qoQ-9v-GzN" firstAttribute="leading" secondItem="EEB-Ph-Rg2" secondAttribute="leading" constant="8" id="2VN-mo-seZ"/>
+                                                        <constraint firstItem="qoQ-9v-GzN" firstAttribute="top" secondItem="EEB-Ph-Rg2" secondAttribute="top" constant="4" id="3Nj-Zh-0nI"/>
+                                                        <constraint firstAttribute="bottom" secondItem="qoQ-9v-GzN" secondAttribute="bottom" constant="4" id="OBd-Fa-0Yc"/>
+                                                        <constraint firstAttribute="trailing" secondItem="qoQ-9v-GzN" secondAttribute="trailing" constant="8" id="rPY-T3-KYB"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                         </stackView>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="X7B-9J-4D9" secondAttribute="bottom" constant="8" id="9eS-I4-kFd"/>
+                                        <constraint firstAttribute="bottom" secondItem="X7B-9J-4D9" secondAttribute="bottom" constant="16" id="9eS-I4-kFd"/>
                                         <constraint firstAttribute="trailing" secondItem="X7B-9J-4D9" secondAttribute="trailing" constant="16" id="H2f-dN-aj7"/>
                                         <constraint firstItem="X7B-9J-4D9" firstAttribute="top" secondItem="Yjr-d4-uW9" secondAttribute="top" constant="16" id="YAe-5B-x0y"/>
                                         <constraint firstItem="X7B-9J-4D9" firstAttribute="leading" secondItem="Yjr-d4-uW9" secondAttribute="leading" constant="16" id="sen-ld-1Ji"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgS-lW-4yf" userLabel="Course Title Container">
-                                    <rect key="frame" x="0.0" y="44.333333333333336" width="293" height="69.666666666666657"/>
+                                    <rect key="frame" x="0.0" y="60.333333333333343" width="293" height="53.666666666666657"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objected Oriented Programming &amp; Design" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz5-l8-7G6" userLabel="Title Label">
-                                            <rect key="frame" x="16" y="4" width="252" height="53.666666666666671"/>
+                                            <rect key="frame" x="16" y="3.9999999999999929" width="252" height="37.666666666666664"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -88,10 +112,12 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="codeContainerView" destination="Yjr-d4-uW9" id="Fd8-Y6-c9z"/>
+                <outlet property="codeLabelContainer" destination="zBf-lr-Nqb" id="BFU-WO-ApB"/>
                 <outlet property="contentContainer" destination="9fL-sl-ZhB" id="3da-Pm-ceQ"/>
                 <outlet property="courseCodeLabel" destination="Oe0-h6-VVb" id="LA5-pX-aD1"/>
                 <outlet property="courseGradeLabel" destination="qoQ-9v-GzN" id="7kf-KR-ybD"/>
                 <outlet property="courseTitleLabel" destination="Uz5-l8-7G6" id="RcG-nF-zfD"/>
+                <outlet property="gradeLabelContainer" destination="EEB-Ph-Rg2" id="ZyQ-Sd-Njs"/>
             </connections>
             <point key="canvasLocation" x="-84.732824427480907" y="-239.43661971830988"/>
         </view>
