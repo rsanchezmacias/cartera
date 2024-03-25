@@ -22,6 +22,8 @@ class WorkManager: WorkManagerProtocol {
         static let jobsFilename: String = "jobs.json"
     }
     
+    private var imageDownloadService: ImageDownloadServiceProtocol!
+    
     private var jobs: [ObservableJob] = []
     private(set) var workExperience: CurrentValueSubject<[ObservableJob], Never>!
     
@@ -31,7 +33,9 @@ class WorkManager: WorkManagerProtocol {
         return dateFormatter
     }()
     
-    init() {
+    init(imageDownloadService: ImageDownloadServiceProtocol) {
+        self.imageDownloadService = imageDownloadService
+        
         workExperience = CurrentValueSubject<[ObservableJob], Never>([])
         
         if let response = JSONParser.decode(filename: Self.Constants.jobsFilename, type: JobsResponse.self) {
@@ -41,6 +45,8 @@ class WorkManager: WorkManagerProtocol {
                 return jobADate > jobBDate
             })
             workExperience.send(self.jobs)
+            
+            downloadImages()
         }
     }
     
@@ -48,6 +54,19 @@ class WorkManager: WorkManagerProtocol {
         return Future { [weak self] promise in
             guard let self = self else { return }
             promise(.success(self.jobs))
+        }
+    }
+    
+    private func downloadImages() {
+        self.jobs.forEach { job in
+            Task.init {
+                do {
+                    let image = try await imageDownloadService.downloadImage(url: job.imageURL)
+                    job.set(image: image)
+                } catch {
+                    print("Error downloading image")
+                }
+            }
         }
     }
     

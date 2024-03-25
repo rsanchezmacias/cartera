@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JobCellView" rowHeight="395" id="oz1-XK-Jxg" customClass="JobCellView" customModule="Cartera" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="395"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oz1-XK-Jxg" id="8YQ-oI-oyi">
+                <rect key="frame" x="0.0" y="0.0" width="447" height="395"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="nyw-1e-Tkg" userLabel="Top Stack View">
+                        <rect key="frame" x="16" y="8" width="415" height="379"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bK0-J5-KKX" userLabel="Image Container">
+                                <rect key="frame" x="0.0" y="0.0" width="76" height="68"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PP5-5f-rc6" userLabel="Job Image">
+                                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="1Rb-mY-qme"/>
+                                            <constraint firstAttribute="width" constant="60" id="w62-IZ-Yqa"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="PP5-5f-rc6" firstAttribute="top" secondItem="bK0-J5-KKX" secondAttribute="top" constant="8" id="c97-oT-Y1f"/>
+                                    <constraint firstItem="PP5-5f-rc6" firstAttribute="leading" secondItem="bK0-J5-KKX" secondAttribute="leading" constant="8" id="drU-ia-vYV"/>
+                                    <constraint firstAttribute="trailing" secondItem="PP5-5f-rc6" secondAttribute="trailing" constant="8" id="hYt-R4-cWf"/>
+                                    <constraint firstAttribute="bottom" secondItem="PP5-5f-rc6" secondAttribute="bottom" id="jJD-B8-byz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5vi-Or-vjL" userLabel="Job Info Container">
+                                <rect key="frame" x="76" y="0.0" width="339" height="364"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FbL-8e-wZB" userLabel="Info Labels Top Container">
+                                        <rect key="frame" x="16" y="0.0" width="307" height="364"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffG-Rh-WqW" userLabel="Top Container">
+                                                <rect key="frame" x="0.0" y="0.0" width="231" height="104.33333333333333"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="go2-NF-qox" userLabel="Job Summary Stack View">
+                                                        <rect key="frame" x="0.0" y="11.666666666666664" width="231" height="81.333333333333343"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Software Engineer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYp-qM-Bgt" userLabel="Position Label">
+                                                                <rect key="frame" x="0.0" y="0.0" width="231" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verizon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8a-lP-Tcu" userLabel="Compnay Label">
+                                                                <rect key="frame" x="0.0" y="20.333333333333336" width="231" height="20.333333333333336"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jun 2020 - Aug 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Deo-t0-kph" userLabel="Date Label">
+                                                                <rect key="frame" x="0.0" y="40.666666666666671" width="231" height="20.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alpharetta, GA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4En-2l-MOo" userLabel="Location Label">
+                                                                <rect key="frame" x="0.0" y="61.000000000000007" width="231" height="20.333333333333336"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="go2-NF-qox" firstAttribute="leading" secondItem="ffG-Rh-WqW" secondAttribute="leading" id="7nY-K0-orW"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="go2-NF-qox" secondAttribute="bottom" id="cEH-g5-64v"/>
+                                                    <constraint firstAttribute="trailing" secondItem="go2-NF-qox" secondAttribute="trailing" id="cwp-UX-Cnd"/>
+                                                    <constraint firstItem="go2-NF-qox" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ffG-Rh-WqW" secondAttribute="top" id="sJm-8c-FAG"/>
+                                                    <constraint firstItem="go2-NF-qox" firstAttribute="centerY" secondItem="ffG-Rh-WqW" secondAttribute="centerY" id="tGY-RT-g07"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxQ-aq-auQ" userLabel="Bottom Container">
+                                                <rect key="frame" x="0.0" y="120.33333333333336" width="305" height="243.66666666666663"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6b-bk-ETI" userLabel="Accomplishments Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="305" height="223.33333333333334"/>
+                                                        <mutableString key="text">- Designed and implemented an iOS framework of reusable components (buttons, typography, iconography, text fields) to reduce the development cycle time, optimize app performance, and enforce consistency across the app.
+ - Delivered a demo iOS application to demonstrate how the components can be easily used and integrated into any project.</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="S6b-bk-ETI" firstAttribute="top" secondItem="gxQ-aq-auQ" secondAttribute="top" id="2nJ-mQ-SAK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="S6b-bk-ETI" secondAttribute="trailing" id="JUP-qh-4kn"/>
+                                                    <constraint firstItem="S6b-bk-ETI" firstAttribute="leading" secondItem="gxQ-aq-auQ" secondAttribute="leading" id="Zvi-ok-Bmn"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="S6b-bk-ETI" secondAttribute="bottom" id="wWp-UY-Pq5"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="FbL-8e-wZB" firstAttribute="leading" secondItem="5vi-Or-vjL" secondAttribute="leading" constant="16" id="84q-Sk-e01"/>
+                                    <constraint firstAttribute="bottom" secondItem="FbL-8e-wZB" secondAttribute="bottom" id="fno-JL-u7l"/>
+                                    <constraint firstAttribute="trailing" secondItem="FbL-8e-wZB" secondAttribute="trailing" constant="16" id="fxx-B6-DDU"/>
+                                    <constraint firstItem="FbL-8e-wZB" firstAttribute="top" secondItem="5vi-Or-vjL" secondAttribute="top" id="gJZ-yF-X1W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nyw-1e-Tkg" firstAttribute="top" secondItem="8YQ-oI-oyi" secondAttribute="top" constant="8" id="2RX-gs-Z7P"/>
+                    <constraint firstAttribute="trailing" secondItem="nyw-1e-Tkg" secondAttribute="trailing" constant="16" id="F7s-HR-Wh2"/>
+                    <constraint firstItem="nyw-1e-Tkg" firstAttribute="leading" secondItem="8YQ-oI-oyi" secondAttribute="leading" constant="16" id="GlP-0q-A0A"/>
+                    <constraint firstAttribute="bottom" secondItem="nyw-1e-Tkg" secondAttribute="bottom" constant="8" id="pEi-OO-SsR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="companyImageView" destination="PP5-5f-rc6" id="tPf-Mk-3fs"/>
+                <outlet property="companyLabel" destination="R8a-lP-Tcu" id="DEc-RT-yJ5"/>
+                <outlet property="dateLabel" destination="Deo-t0-kph" id="hQH-as-W02"/>
+                <outlet property="jobDescriptionLabel" destination="S6b-bk-ETI" id="Si2-eh-48y"/>
+                <outlet property="locationLabel" destination="4En-2l-MOo" id="aHk-hq-sdB"/>
+                <outlet property="positionLabel" destination="pYp-qM-Bgt" id="8OU-3r-b3w"/>
+            </connections>
+            <point key="canvasLocation" x="-206.87022900763358" y="-33.450704225352112"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

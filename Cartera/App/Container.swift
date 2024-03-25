@@ -16,9 +16,13 @@ class Container {
     private(set) var skillsManager: SkillsManagerProtocol!
     private(set) var educationManager: EducationManagerProtocol!
     
+    private(set) var imageDownloadService: ImageDownloadServiceProtocol!
+    
     func setup() {
+        imageDownloadService = ImageDownloadService()
+        
         profileManager = ProfileManager()
-        workManager = WorkManager()
+        workManager = WorkManager(imageDownloadService: imageDownloadService)
         skillsManager = SkillsManager()
         educationManager = EducationManager()
     }
