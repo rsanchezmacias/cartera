@@ -170,7 +170,7 @@ extension ProfileViewController {
         workSummaryViewController.view.translatesAutoresizingMaskIntoConstraints = false
         workSummaryViewController.view.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
         workSummaryViewController.view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: Self.Constants.sideSpacing).isActive = true
-        workSummaryViewController.view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: Self.Constants.sideSpacing).isActive = true
+        workSummaryViewController.view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -Self.Constants.sideSpacing).isActive = true
         workSummaryViewController.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
         
         workSummaryViewController.didMove(toParent: self)

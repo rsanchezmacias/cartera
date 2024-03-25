@@ -72,7 +72,7 @@ class WorkSummaryViewController: UIViewController {
         }.store(in: &subscriptions)
     }
     
-    private func addJobViews(jobs: [JobInfo]) {
+    private func addJobViews(jobs: [ObservableJob]) {
         mainStackView.arrangedSubviews.forEach { view in
             mainStackView.removeArrangedSubview(view)
             NSLayoutConstraint.deactivate(view.constraints)

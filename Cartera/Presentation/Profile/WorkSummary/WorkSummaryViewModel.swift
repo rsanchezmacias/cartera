@@ -12,7 +12,7 @@ class WorkSummaryViewModel: ObservableObject {
     
     private var workManager: WorkManagerProtocol!
     
-    @Published var jobs: [JobInfo] = []
+    @Published var jobs: [ObservableJob] = []
     private var subscriptions: [AnyCancellable] = []
     
     init() {

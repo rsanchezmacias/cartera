@@ -3,40 +3,57 @@
         {
             "title": "MacOS Developer",
             "company": "BlueJeans by Verizon",
+            "image_url": "https://yt3.googleusercontent.com/ytc/AIdro_misxOtZyxda144_qR5-bJYNoycq63LKSu45HE-PA=s900-c-k-c0x00ffffff-no-rj",
             "startDate": "2022-03-01",
             "endDate": "2023-12-29",
             "location": "San Jose, CA",
             "accomplishments": [
-                "Led the end-to-end development of new MacOS features, which included gathering requirements from product owners, refining stories for feature epics, spring allocation for the release, hands-on feature implementation, and post-release bug triage and maintenance.",
-                "Added robust unit tests with every code change by mocking dependent classes (from AppKit and other managers within the project) and stubbing asynchronous timers and API requests, achieving line coverage of over 95% across all new business logic components.",
-                "Owned the development of the MacOS presence feature that published availability and social status messages using the PubNub Swift SDK; this consisted of maintaining the PubNub SDK life cycle, managing the subscription of 400+ user presence channels, and ensuring message payloads worked seamlessly across other platforms (Windows, Android, and iOS)."
+                "Led the end-to-end development of macOS features, which included gathering requirements from product owners, refining stories for feature epics, sprint allocation for the release, feature implementation, and post-release bug triage.",
+                "Added robust unit tests with every code change by mocking dependent classes and stubbing asynchronous timers and API requests, achieving line coverage of over 90% across all new business logic components.",
+                "Owned the development of a macOS presence feature that published user availability and social status messages using the PubNub Swift SDK."
             ]
         },
         {
             "title": "iOS Developer",
             "company": "Verizon Connect",
+            "image_url": "https://s3.amazonaws.com/cms.ipressroom.com/354/files/20222/60f59db7b3aed30fb5e8ac35_2_Verizon_Connect_Logo/2_Verizon_Connect_Logo_a86c7062-b4d7-4c71-a08a-f4b56c99a4d9-prv.jpg",
             "startDate": "2021-06-01",
             "endDate": "2022-03-01",
             "location": "Alpharetta, GA",
             "accomplishments": [
-                "Collaborated in implementing an iOS Wi-Fi hotspot feature for the Hum device (a connected car system), allowing customers to activate a vehicle's hotspot by simply clicking a button within the mobile application.",
-                "Followed the VIPER (View, Interactor, Presenter, Entity, and Router) design pattern to build new features and facilitate the codebase's testing, readability, and maintainability."
+                "Implemented an iOS Wi-Fi hotspot feature for the Hum device (a connected car system), allowing customers to activate a vehicle's hotspot through the mobile application.",
+                "Followed VIPER (View, Interactor, Presenter, Entity, and Router) design pattern to build new features and facilitate the codebase's testing, readability, and maintainability.",
+                "Maintained legacy codebase written in Objective-C, fixing bugs and transitioning small components into Swift."
             ]
         },
         {
-            "title": "iOS Software Engineer Intern",
+            "title": "Software Engineering Intern, iOS",
             "company": "Verizon Connect",
+            "image_url": "https://s3.amazonaws.com/cms.ipressroom.com/354/files/20222/60f59db7b3aed30fb5e8ac35_2_Verizon_Connect_Logo/2_Verizon_Connect_Logo_a86c7062-b4d7-4c71-a08a-f4b56c99a4d9-prv.jpg",
             "startDate": "2020-06-15",
             "endDate": "2020-08-14",
             "location": "Alpharetta, GA",
             "accomplishments": [
-                "Designed and implemented an iOS framework of reusable components to reduce the development cycle time,optimize app performance, and enforce consistency across the screens.",
-                "Developed a demo iOS application to demonstrate how the components can be easily used and integrated into any project."
+                "Designed and implemented an iOS framework of reusable components (buttons, typography, iconography, text fields) to reduce the development cycle time, optimize app performance, and enforce consistency across the app.",
+                "Delivered a demo iOS application to demonstrate how the components can be easily used and integrated into any project."
+            ]
+        },
+        {
+            "title": "Software Engineering Intern, Firmware",
+            "company": "Verizon Connect",
+            "image_url": "https://s3.amazonaws.com/cms.ipressroom.com/354/files/20222/60f59db7b3aed30fb5e8ac35_2_Verizon_Connect_Logo/2_Verizon_Connect_Logo_a86c7062-b4d7-4c71-a08a-f4b56c99a4d9-prv.jpg",
+            "startDate": "2019-06-15",
+            "endDate": "2019-08-14",
+            "location": "Dunwoody, GA",
+            "accomplishments": [
+                "Reduced latency from 60 seconds to 5 seconds in a vehicle's GPS device communication by leveraging MQTT, leading to more accurate location data to be displayed to the user.",
+                "Collaborated with a cross-functional team to design JSON objects containing live location data to be sent to a backend system and read by a web-based application."
             ]
         },
         {
             "title": "Learning Assistant",
             "company": "Bright Success Center",
+            "image_url": "https://upload.wikimedia.org/wikipedia/en/5/51/UC_Merced_Seal.png",
             "startDate": "2018-01-20",
             "endDate": "2020-05-14",
             "location": "Merced, GA",

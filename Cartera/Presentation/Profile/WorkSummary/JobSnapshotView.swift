@@ -40,7 +40,7 @@ class JobSnapshotView: UIView {
         }
     }
     
-    func setupWith(job: JobInfo, isTopRow: Bool = false) {
+    func setupWith(job: ObservableJob, isTopRow: Bool = false) {
         companyLabel.text = job.company
         positionLabel.text = job.title
         timelineTopLine.isHidden = isTopRow

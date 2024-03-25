@@ -11,6 +11,7 @@ struct JobInfo: Codable {
     
     let title: String
     let company: String
+    let imageURL: String
     let startDate: String
     let endDate: String?
     let location: String
@@ -18,6 +19,7 @@ struct JobInfo: Codable {
     
     enum CodingKeys: String, CodingKey {
         case title, company, startDate, endDate, location, accomplishments
+        case imageURL = "image_url"
     }
     
 }
