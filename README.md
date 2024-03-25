@@ -44,6 +44,8 @@ The application is built following MVVM to enforce separation of concerns.
     <img src="Cartera/Resources/App_Screenshots/screenshot_02.png" alt="app_screenshot" width="150" height="325" style="padding-right:20px;">
     <img src="Cartera/Resources/App_Screenshots/screenshot_03.png" alt="app_screenshot" width="150" height="325" style="padding-right:20px;">
     <img src="Cartera/Resources/App_Screenshots/screenshot_04.png" alt="app_screenshot" width="150" height="325" style="padding-right:20px;">
+    <img src="Cartera/Resources/App_Screenshots/screenshot_05.png" alt="app_screenshot" width="150" height="325" style="padding-right:20px;">
+    <img src="Cartera/Resources/App_Screenshots/screenshot_06.png" alt="app_screenshot" width="150" height="325" style="padding-right:20px;">
 </div>
 
 
