@@ -27,7 +27,7 @@
 <h3 align="center" style="font-size:24px;">Cartera</h3>
 
   <p align="center">
-    A resume application. <br/> "Cartera" is a digital wallet containing a small snapshot of information.
+    A resume application. <br/> "Cartera" is a digital wallet containing work experience, education, and skillset.
   </p>
 </div>
 
